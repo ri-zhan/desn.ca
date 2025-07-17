@@ -1,0 +1,57 @@
+--- 
+title: DESN Archive
+---
+
+<link rel="stylesheet" href="style.css">
+
+<section style="margin-bottom:3rem;">
+    <h3>
+        This is an archive of the DESN graduation showcase websites. The 4-year DESN program offers a Bachelor of Design, Specialized Honours degree. Established in 2023, it is a continuation of the 1999–2022 YSDN program, the archives of which inspired this site. You can find at YSDN graduation websites at <a href="https://ysdn.info/">ysdn.info</a>.
+    </h3>
+</section>
+
+<section style="margin-bottom:3rem;">
+    <div style="display: grid; width: 100%; row-gap: 32px;">
+
+        {% for year in years %}
+            <div style="display: flex; gap: 2px; width: 100%;">
+
+                {% comment %} graduation year {% endcomment %}
+                <p style="min-width: 100px; margin: 0; padding: 0;">{{ year[1].year }}</p>
+                
+                <div style="display: inline-block; gap: 2px; min-width: 100px;">
+                    <div style=width: 100%>
+                        {% if year[1].archivepublished == true %}
+                            <a href="archives/{{ year[1].year }}" style="margin: 0; padding: 0;">Archive</a>
+                        {% endif %}
+                    </div>
+
+                    <div style="width: 100%;">
+                        {% if year[1].sitelive == true %}
+                            <a href="archives/{{ year[1].year }}" style="margin: 0; padding: 0;">Live site</a>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-wrap: wrap; column-gap: 24px; line-height: auto; margin: 0; padding: 0">
+
+                    {% assign graduates = year[1].graduates %}
+                    {% for graduate in graduates %}
+                        <p style="display: inline-block; white-space: nowrap; margin: 0; padding: 0;">{{ graduate }}</p>
+                    {% endfor %} 
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+</section>
+
+<section style="display: grid; row-gap: 4px;">
+    Currently in development.
+    <br/>
+    <div style="inline-block">Creator: <a href="https://ri.works/"">Ri Zhan</a></div>
+    <br/>
+    Contributor: Henry Wilkinson
+    <br/>
+    <a href="https://github.com/ri-zhan/desn.ca">View on GitHub.</a>
+</section>
