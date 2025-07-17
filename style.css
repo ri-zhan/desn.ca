@@ -1,0 +1,11 @@
+ul li::marker {
+  font-size: 0.5em; /* Adjust the size as needed */
+}
+
+body {
+    margin: 0px 300px;
+}
+
+* {
+  background-color: red;
+}
