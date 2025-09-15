@@ -3,9 +3,10 @@ ul li::marker {
 }
 
 body {
-    margin: 0px 300px;
+    margin: 1rem;
+    max-width: 1440px;
 }
 
 * {
-  background-color: red;
+  /* background-color: red; */
 }
