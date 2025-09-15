@@ -1,0 +1,16 @@
+ul li::marker {
+  font-size: 0.5em; /* Adjust the size as needed */
+}
+
+body {
+    margin: 1rem;
+    max-width: 1440px;
+}
+
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+section {
+  margin-bottom: 32px;
+}

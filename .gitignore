@@ -3,6 +3,7 @@ package/generated*
 
 # Ignore installed npm modules
 node_modules/
+node_modules/
 
 # Ignore build tool output, e.g. code coverage
 .nyc_output/
@@ -22,3 +23,5 @@ _site/
 # Ignore test files
 .cache
 test/stubs-layout-cache/_includes/*.js
+
+.DS_Store
