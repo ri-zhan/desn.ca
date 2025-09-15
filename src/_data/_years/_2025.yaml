@@ -1,9 +1,9 @@
 year: 2025
 name: "SHIFT"
 archivelink: "https://ysdn-info.s3.us-east-005.backblazeb2.com/ysdn2009.wacz"
-archivestarturl: "http://2025.desn.ca/"
 archivepublished: false
 sitelive: true
+siteurl: "http://2025.desn.ca/"
 graduates:
     - "Aaliyah Romano"
     - "Alicia Yi"
