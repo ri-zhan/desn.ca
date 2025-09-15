@@ -9,11 +9,11 @@ title: DESN Archive
     </h1>
 </section>
 
-<section style="margin-bottom:3rem;">
-    <div style="display: grid; width: 100%; row-gap: 32px;">
+{% comment %} <section style="margin-bottom:3rem;"> {% endcomment %}
+    {% comment %} <div style="display: grid; width: 100%; row-gap: 32px;"> {% endcomment %}
 
         {% for _year in _years %}
-            <div style="display: flex; gap: 2px; width: 100%;">
+            <section style="display: flex; gap: 2px; width: 100%;">
 
                 {% comment %} graduation year {% endcomment %}
                 <p style="min-width: 100px; margin: 0; padding: 0;">{{ _year[1].year }}</p>
@@ -39,8 +39,8 @@ title: DESN Archive
                         <p style="display: inline-block; white-space: nowrap; margin: 0; padding: 0;">{{ graduate }}</p>
                     {% endfor %} 
                 </div>
-            </div>
+            </section>
         {% endfor %}
-    </div>
+    {% comment %} </div> {% endcomment %}
 
-</section>
+{% comment %} </section> {% endcomment %}
