@@ -13,6 +13,7 @@ export default function (eleventyConfig) {
 		dir: {
 			input: 'src',
 			output: '_site',
+			data: '_data',
 		},
 		// templateFormats: ['html', 'md', 'liquid'],
 		// htmlTemplateEngine: 'liquid',
